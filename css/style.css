@@ -298,12 +298,11 @@ body {
 .footer-link:hover {
   color: #ff7500;
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #121212;
     color: #e0e0e0;
   }
-
   .header,
   .hero,
   .why,
@@ -324,7 +323,7 @@ body {
   a {
     color: #ff7500;
   }
-} */
+}
 @media (max-width: 1070px) {
   .cta-img {
     position: static;
