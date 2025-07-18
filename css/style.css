@@ -1,11 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --orange: #ff7500;
+  --black: #252420;
+}
+.dark {
+   {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  .header,
+  .hero,
+  .why,
+  .cta {
+    background-color: #1f1f1f;
+  }
+
+  .footer {
+    background-color: #1f1f1f;
+  }
+
+  .hero-title,
+  .why-title,
+  .cta-title {
+    color: var(--orange);
+  }
+  .orange-button {
+    color: white;
+  }
+  a {
+    color: var(--orange);
+  }
+  .card-title {
+    color: white;
+  }
+  .card-text {
+    color: white;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
 ::selection {
   background-color: black;
   color: white;
@@ -23,7 +96,7 @@ ul {
 .orange-line {
   width: 80px;
   height: 3px;
-  background-color: #ff7500;
+  background-color: var(--orange);
 }
 
 /* Body */
@@ -47,7 +120,7 @@ body {
 /* Button */
 .orange-button {
   display: inline-block;
-  background-color: #ff7500;
+  background-color: var(--orange);
   color: white;
   text-decoration: none;
   padding: 12px 24px;
@@ -73,7 +146,7 @@ body {
   top: 0;
   height: 5px;
   width: 100%;
-  background-color: #ff7500;
+  background-color: var(--orange);
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
@@ -100,7 +173,7 @@ body {
 }
 
 .header-link:hover {
-  color: #ff7500;
+  color: var(--orange);
 }
 
 .header-link::after {
@@ -113,7 +186,7 @@ body {
   align-items: start;
   width: 0;
   height: 2px;
-  background-color: #ff7500;
+  background-color: var(--orange);
   transition: width 0.5s ease;
 }
 
@@ -229,7 +302,7 @@ body {
   color: white;
   padding: 64px;
   border-radius: 12px;
-  margin-bottom: 160px;
+  padding-: 160px;
 }
 
 .cta-content {
@@ -250,7 +323,7 @@ body {
   margin-bottom: 24px;
 }
 .orange-text {
-  color: #ff7500;
+  color: var(--orange);
 }
 
 .cta-img {
@@ -296,7 +369,7 @@ body {
 }
 
 .footer-link:hover {
-  color: #ff7500;
+  color: var(--orange);
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -317,11 +390,11 @@ body {
   .hero-title,
   .why-title,
   .cta-title {
-    color: #ff7500;
+    color: var(--orange);
   }
 
   a {
-    color: #ff7500;
+    color: var(--orange);
   }
 }
 @media (max-width: 1070px) {
