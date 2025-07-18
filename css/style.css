@@ -34,15 +34,16 @@
   font-display: swap;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"); */
 :root {
   --orange: #ff7500;
   --black: #252420;
 }
 .dark {
+  .body
    {
     background-color: #121212;
-    color: #e0e0e0;
+    color: white;
   }
   .header,
   .hero,
@@ -72,13 +73,13 @@
   .card-text {
     color: white;
   }
-
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 ::selection {
   background-color: black;
   color: white;
@@ -302,7 +303,7 @@ body {
   color: white;
   padding: 64px;
   border-radius: 12px;
-  padding-: 160px;
+  padding: 160px;
 }
 
 .cta-content {
